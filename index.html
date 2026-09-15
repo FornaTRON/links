@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>FornaTRON | Links</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --background: #050a11;
+      --card: #0c1827;
+      --border: #193654;
+
+      --blue: #238cff;
+      --blue-light: #73bbff;
+      --blue-glow: rgba(35, 140, 255, 0.18);
+
+      --text: #f3f7fb;
+      --text-secondary: #a7b5c5;
+      --text-muted: #718198;
+    }
+
+    body {
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Helvetica, Arial, sans-serif;
+
+      background:
+        radial-gradient(
+          circle at 50% -10%,
+          rgba(35, 140, 255, 0.20),
+          transparent 35%
+        ),
+        var(--background);
+
+      color: var(--text);
+
+      min-height: 100vh;
+    }
+
+    .page {
+      width: min(620px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 45px 0;
+    }
+
+
+    /* Banner */
+
+    .channel-banner {
+      width: 100%;
+      margin-bottom: 30px;
+
+      overflow: hidden;
+
+      border: 1px solid var(--border);
+      border-radius: 16px;
+
+      box-shadow:
+        0 0 35px rgba(35, 140, 255, 0.15);
+    }
+
+    .channel-banner img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+
+    /* Profile */
+
+    .profile {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .profile-picture {
+      width: 135px;
+      height: 135px;
+
+      border-radius: 50%;
+      object-fit: cover;
+
+      border: 3px solid var(--blue);
+
+      box-shadow:
+        0 0 35px var(--blue-glow);
+
+      margin-bottom: 18px;
+    }
+
+    .profile h1 {
+      font-size: 32px;
+      font-weight: 800;
+
+      letter-spacing: 2px;
+
+      margin-bottom: 6px;
+    }
+
+    .profile p {
+      color: var(--text-secondary);
+      font-size: 15px;
+    }
+
+
+    /* Links */
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .link-button {
+      display: flex;
+      align-items: center;
+
+      min-height: 78px;
+      padding: 16px 22px;
+
+      text-decoration: none;
+
+      background: linear-gradient(
+        180deg,
+        rgba(16, 34, 56, 0.95),
+        rgba(9, 19, 33, 0.95)
+      );
+
+      border: 1px solid var(--border);
+      border-radius: 14px;
+
+      transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+    }
+
+    .link-button:hover {
+      transform: translateY(-2px);
+
+      border-color: var(--blue);
+
+      background: linear-gradient(
+        180deg,
+        rgba(22, 48, 78, 0.98),
+        rgba(10, 25, 43, 0.98)
+      );
+
+      box-shadow:
+        0 0 25px var(--blue-glow);
+    }
+
+    .link-content {
+      flex: 1;
+      text-align: left;
+    }
+
+    .link-title {
+      display: block;
+
+      color: var(--text);
+
+      font-size: 17px;
+      font-weight: 700;
+
+      line-height: 1.3;
+    }
+
+    .link-description {
+      display: block;
+
+      margin-top: 3px;
+
+      color: var(--text-secondary);
+
+      font-size: 13px;
+    }
+
+    .arrow {
+      margin-left: 16px;
+
+      color: var(--blue-light);
+
+      font-size: 22px;
+      font-weight: 600;
+
+      transition: transform 0.2s ease;
+    }
+
+    .link-button:hover .arrow {
+      transform: translateX(4px);
+    }
+
+
+    /* Featured Link */
+
+    .link-button.featured {
+      border-color: rgba(35, 140, 255, 0.65);
+
+      background: linear-gradient(
+        180deg,
+        rgba(35, 140, 255, 0.17),
+        rgba(9, 25, 43, 0.95)
+      );
+    }
+
+
+    /* Footer */
+
+    footer {
+      text-align: center;
+
+      color: var(--text-muted);
+
+      font-size: 12px;
+
+      padding-top: 35px;
+    }
+
+
+    /* Mobile */
+
+    @media (max-width: 600px) {
+
+      .page {
+        width: calc(100% - 24px);
+        padding: 25px 0 35px;
+      }
+
+      .channel-banner {
+        margin-bottom: 25px;
+      }
+
+      .profile-picture {
+        width: 120px;
+        height: 120px;
+      }
+
+      .profile h1 {
+        font-size: 28px;
+      }
+
+      .link-button {
+        min-height: 74px;
+        padding: 15px 18px;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+  <main class="page">
+
+
+    <!-- FornaTRON Banner -->
+
+    <div class="channel-banner">
+
+      <img
+        src="images/fornatron-banner.jpg"
+        alt="FornaTRON"
+      >
+
+    </div>
+
+
+    <!-- Profile -->
+
+    <section class="profile">
+
+      <img
+        class="profile-picture"
+        src="images/profile.png"
+        alt="FornaTRON"
+      >
+
+      <h1>
+        FornaTRON
+      </h1>
+
+      <p>
+        Gaming · Streaming · Tech · How-To
+      </p>
+
+    </section>
+
+
+    <!-- Links -->
+
+    <section class="links">
+
+
+      <!-- Primary YouTube -->
+
+      <a
+        class="link-button featured"
+        href="https://www.youtube.com/FornaTRON"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <div class="link-content">
+
+          <span class="link-title">
+            Primary YouTube
+          </span>
+
+          <span class="link-description">
+            Tutorials, streaming, gaming & tech
+          </span>
+
+        </div>
+
+        <span class="arrow">
+          ›
+        </span>
+
+      </a>
+
+
+      <!-- Secondary YouTube -->
+
+      <a
+        class="link-button"
+        href="https://www.youtube.com/@FornaTRONGaming"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <div class="link-content">
+
+          <span class="link-title">
+            FornaTRON Gaming
+          </span>
+
+          <span class="link-description">
+            Secondary YouTube Channel
+          </span>
+
+        </div>
+
+        <span class="arrow">
+          ›
+        </span>
+
+      </a>
+
+
+      <!-- X -->
+
+      <a
+        class="link-button"
+        href="https://www.x.com/FornaTRON"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <div class="link-content">
+
+          <span class="link-title">
+            X
+          </span>
+
+          <span class="link-description">
+            @FornaTRON
+          </span>
+
+        </div>
+
+        <span class="arrow">
+          ›
+        </span>
+
+      </a>
+
+
+      <!-- Sponsors -->
+
+      <a
+        class="link-button"
+        href="https://fornatron.github.io/sponsors/"
+      >
+
+        <div class="link-content">
+
+          <span class="link-title">
+            Sponsorship & Business Inquiries
+          </span>
+
+          <span class="link-description">
+            Information for potential sponsors
+          </span>
+
+        </div>
+
+        <span class="arrow">
+          ›
+        </span>
+
+      </a>
+
+
+    </section>
+
+
+    <footer>
+      © 2026 FornaTRON
+    </footer>
+
+
+  </main>
+
+</body>
+</html>
